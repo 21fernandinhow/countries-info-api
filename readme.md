@@ -20,9 +20,11 @@ Countries Info API is an Express application that provides information about cou
 2. Install dependencies: `npm install`
 3. Create a .env file in the root directory and add your environment variables:
 
-DATENAGER_API_URL=<your-datenager-api-url>
-COUNTRIES_NOW_API_URL=<your-countries-now-api-url>
-PORT=8080
+    ```plaintext
+        DATENAGER_API_URL=<your-datenager-api-url>
+        COUNTRIES_NOW_API_URL=<your-countries-now-api-url>
+        PORT=8080
+    ```
 
 ## Usage
 
