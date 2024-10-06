@@ -17,7 +17,7 @@ Countries Info API is an Express application that provides information about cou
 ## Installation
 
 1. Clone this repository
-2. Install dependencies: (run npm install)
+2. Install dependencies: `npm install`
 3. Create a .env file in the root directory and add your environment variables:
 
 DATENAGER_API_URL=<your-datenager-api-url>
@@ -26,11 +26,11 @@ PORT=8080
 
 ## Usage
 
-- To run the application in development mode, use the following command: npm run dev
-- To build the project, use: npm run build
-- To start the application in production mode, use: npm start
+- To run the application in development mode, use the following command: `npm run dev`
+- To build the project, use: `npm run build`
+- To start the application in production mode, use: `npm start`
 
-The server will run on http://localhost:8080 (or the port specified in the .env file).
+The server will run on `http://localhost:8080` (or the port specified in the `.env` file).
 
 ## Endpoints
 
