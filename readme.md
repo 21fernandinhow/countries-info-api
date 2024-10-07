@@ -53,3 +53,6 @@ The server will run on `http://localhost:8080` (or the port specified in the `.e
 
 Make sure to set the following environment variables in your `.env` file:
 - `PORT`: The port on which the server will run (optional, default is `8080`).
+
+## Deploy:
+Production version on: <a href="https://countries-info-api-production.up.railway.app/" target="_blank" rel="noopener noferrer"> https://countries-info-api-production.up.railway.app/ </a> (necessary use the endpoints after slash)
