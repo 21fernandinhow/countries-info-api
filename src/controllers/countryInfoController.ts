@@ -4,21 +4,21 @@ import axios from 'axios';
 export const getCountryInfo = async (req: Request, res: Response): Promise<void> => {
     const { countryCode, countryName } = req.params;
 
-    const borders = await axios.get(`${process.env.DATENAGER_API_URL}/CountryInfo/${countryCode}`)
+    const borders = await axios.get(`https://date.nager.at/api/v3/CountryInfo/${countryCode}`)
         .then(response => response.data?.borders)
         .catch(error => {
             console.error('Error fetching border countries:', error);
             return res.status(500).json({ message: 'Internal Server Error' });
         });
 
-    const populationData = await axios.post(`${process.env.COUNTRIES_NOW_API_URL}/population`, {country: countryName})
+    const populationData = await axios.post(`https://countriesnow.space/api/v0.1/countries/population`, {country: countryName})
         .then(response => response.data.data.populationCounts)
         .catch(error => {
             console.error('Error fetching country population data:', error);
             return res.status(500).json({ message: 'Internal Server Error' });
         });
 
-    const flagImageUrl = await axios.post(`${process.env.COUNTRIES_NOW_API_URL}/flag/images`, {iso2: countryCode})
+    const flagImageUrl = await axios.post(`https://countriesnow.space/api/v0.1/countries/flag/images`, {iso2: countryCode})
     .then(response => response.data.data.flag)
     .catch(error => {
         console.error('Error fetching country flag:', error);

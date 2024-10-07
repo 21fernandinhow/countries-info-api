@@ -21,8 +21,6 @@ Countries Info API is an Express application that provides information about cou
 3. Create a .env file in the root directory and add your environment variables:
 
     ```plaintext
-        DATENAGER_API_URL=<your-datenager-api-url>
-        COUNTRIES_NOW_API_URL=<your-countries-now-api-url>
         PORT=8080
     ```
 
@@ -54,7 +52,4 @@ The server will run on `http://localhost:8080` (or the port specified in the `.e
 ## Environment Variables
 
 Make sure to set the following environment variables in your `.env` file:
-
-- `DATENAGER_API_URL`: Base URL for the Datenager API.
-- `COUNTRIES_NOW_API_URL`: Base URL for the Countries Now API.
 - `PORT`: The port on which the server will run (optional, default is `8080`).
