@@ -13,8 +13,8 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.use('/api/availableCountries', availableCountriesRouter); 
-app.use('/api/countryInfo', countryInfoRouter); 
+app.use('/availableCountries', availableCountriesRouter); 
+app.use('/countryInfo', countryInfoRouter); 
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
